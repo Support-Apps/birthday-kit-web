@@ -241,7 +241,7 @@ body {
     padding: 0 24px;
 }
 
-.hero-eyebrow {
+.hero-eyebrow { margin-top: 40px;
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 6px;
@@ -1457,7 +1457,7 @@ footer {
 /* CAROUSEL */
 .carousel-container { max-width:500px; margin:0 auto; position:relative; overflow:hidden; }
 .carousel-track { display:flex; transition:transform 0.5s cubic-bezier(0.4,0,0.2,1); }
-.carousel-slide { min-width:100%; padding:0 8px; display:flex; align-items:center; justify-content:center; }
+.carousel-slide { background: var(--blush-pale); min-height: 300px; min-width: 100%; padding:0 8px; display:flex; align-items:center; justify-content:center; }
 .carousel-slide img { max-width:100%; max-height:450px; object-fit:contain; border:1px solid rgba(200,169,96,0.15); background:#fff; box-shadow: 0 4px 20px rgba(200,120,140,0.1); }
 .carousel-btn { position:absolute; top:50%; transform:translateY(-50%); width:44px; height:44px; border-radius:50%; border:1.5px solid var(--blush-soft); background:rgba(255,250,246,0.95); color:var(--blush-deep); font-size:1.4rem; cursor:pointer; transition:all 0.3s; display:flex; align-items:center; justify-content:center; z-index:2; }
 .carousel-btn:hover { background:var(--blush); color:#fff; border-color:var(--blush); }
@@ -1623,8 +1623,10 @@ footer {
             <div class="feature-desc">Props on sticks plus selfie-style photo frames with cut-out windows for memorable snapshots</div>
         </div>
         <div class="feature-card" onclick="document.getElementById('buy').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;">
-            <div class="feature-img-wrap" style="background:var(--blush-pale);display:flex;align-items:center;justify-content:center;">
-                <span style="font-size:4.5rem;">🖨️</span>
+            <div class="feature-img-wrap" style="background:var(--cream);display:flex;align-items:center;justify-content:center;border:1px solid rgba(200,169,96,0.15);">
+                <div style="background:#fff;width:85%;height:80%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(200,169,96,0.1);">
+                    <span style="font-size:4.5rem;">🖨️</span>
+                </div>
             </div>
             <div class="feature-number">∞</div>
             <div class="feature-name">Instant Print</div>
@@ -1666,7 +1668,7 @@ footer {
 <section class="editorial-section" id="features">
     <div class="editorial-visual">
         <div class="editorial-badge reveal">
-            <span class="badge-number">7+</span>
+            <span class="badge-number">7</span>
             <span class="badge-text">Categories</span>
             <span class="badge-sub">in one kit</span>
         </div>
